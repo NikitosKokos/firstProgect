@@ -1,28 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>
+      Game
+    </title>
+    <meta http-equiv="Content-type" content="text/html;charset-UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="/fonts/css/fontawesome.min.css" />
+    <script src="https://use.fontawesome.com/edf57295b2.js"></script>
+  </head>
 
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <a href="#" class="menu-btn"><span></span></a>
+        <nav class="menu-list">
+          <div class="user">
+            <a href="#" class="user-icon"
+              ><i class="fa fa-user-circle fa-4x"></i
+            ></a>
 
-	<title>
-		JS курсы 
-	</title>
-<meta http-equiv="Content-type" content="text/html;charset-UTF-8" />
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<div class="wrapper">
+            <div class="loginToAccount">
+              <a href="#" class="login"> Войти</a>
+            </div>
+          </div>
+          <div class="menu-score">
+            <div class="score-text">0</div>
+            <div class="score-icon">
+              <img src="img/coin.png" alt="coin" width="15px" />
+            </div>
+          </div>
+          <a href="#"><i class="fa fa-gamepad"></i> игры</a>
+          <a href="#"><i class="fa fa-shopping-cart"></i> магазин</a>
+          <a href="#"><i class="fa fa-cog"></i> настройки</a>
+          <a href="#"></a>
+        </nav>
+      </div>
+      <div class="content">
+        <header class="header">
+          <div class="max-width-conteiner">
+            <div class="header__rov">
+              <div class="button__menu"></div>
+              <div class="header__logo">
+                <img src="img/logo.jpg" alt="game" height="65px" />
+              </div>
+              <div class="header__score">
+                <div class="score-text">0</div>
+                <div class="score-icon">
+                  <img src="img/coin.png" alt="coin" width="15px" />
+                </div>
+              </div>
+              <div class="header__profile">
+                <i class="fa fa-user-circle"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="heart">
+          <a href="#" class="heart-a">
+            <img class="" src="img/heart.png" alt="heart" width="30px" />
+            <!-- <i class="fa fa-heart fa-2x"></i> -->
+          </a>
+        </div>
+        <div class="game">
+          <div class="max-width-conteiner">
+            <div class="game__grid">
+              <div class="game__elements game__1">
+                <div class="background-image">
+                  <img src="../img/flappy-bird.jpg" alt="image" height="100%" />
+                </div>
+                <div class="favorites">
+                  <a href="#" class="favorites__img">
+                    <i class="fa fa-heart"></i>
+                    <!-- <img src="img/heart-regular.svg" alt="heart" width="27px"/> -->
+                  </a>
+                  <a href="#" class="favorites-active"
+                    ><span class="heart-span"
+                      ><i class="fa fa-heart "></i
+                    ></span>
+                  </a>
+                </div>
+                <div class="info">
+                  <i class="fa fa-info-circle  fa-2x"></i>
+                </div>
+                <div class="goLavel">
+                  <div class="active-goLavel"><i i class="fa fa-play"></i></div>
+                </div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+              <div class="game__elements game__elements-close game__2">
+                <div class="background-image"></div>
+                <div class="close"><i class="fa fa-lock"></i></div>
+                <div class="favorites"></div>
+                <div class="info"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- game -->
+      </div>
+    </div>
 
-<p>Hello World!</p>
-
-
-</div>
-<!-- <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script> -->
-<!--<script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script>-->
-<script src="js/script.js"></script>
-
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script>-->
+    <script src="js/script.js"></script>
+  </body>
 </html>
