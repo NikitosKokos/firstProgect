@@ -231,18 +231,22 @@ h6 {
   width: 100%;
   height: 50px;
 }
+
 .header__score {
   margin-right: 50px;
 }
+
 .header__profile {
   font-size: 40px;
 }
+
 .heart .fa-heart {
   color: red;
   position: absolute;
   right: 20px;
   top: 10px;
 }
+
 .heart img {
   position: absolute;
   right: 20px;
@@ -297,6 +301,7 @@ h6 {
 .game__elements:hover .active-goLavel {
   opacity: 100;
 }
+
 .goLavel {
   transition: all 1s;
 }
@@ -346,7 +351,7 @@ h6 {
   display: none;
 }
 
-.game__1 {
+.game__elements {
   overflow: hidden;
 }
 
@@ -371,6 +376,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 2px dashed rgba(255, 255, 255, 0.8); /* Пунктирная рамка */
+  outline: 2px dashed rgba(255, 255, 255, 0.8);
+  /* Пунктирная рамка */
   outline-offset: -15px;
 }
