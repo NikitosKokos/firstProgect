@@ -289,11 +289,7 @@ h6 {
   z-index: 99;
 }
 
-/* .menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  background-color: #fff;
-} */
+
 
 .header {
   width: 100%;
@@ -571,6 +567,12 @@ h6 {
 
   .menu-btn_active {
     margin-right: 60px;
+  }
+
+  .menu-btn_active span,
+  .menu-btn_active span::before,
+  .menu-btn_active span::after {
+    background-color: #fff;
   }
 }
 
