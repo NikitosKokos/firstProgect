@@ -201,6 +201,7 @@ h6 {
 }
 
 @keyframes ball {
+
   20%,
   80% {
     opacity: 1;
@@ -286,6 +287,7 @@ h6 {
   height: 2px;
   background-color: #222;
 }
+
 
 .header {
   width: 100%;
