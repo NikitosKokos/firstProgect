@@ -10,10 +10,6 @@ $('.menu-btn').on('click', function (e) {
 //   $('.menu').toggleClass('menu_active');
 // });
 
-
-
-
-
 // preloader 
 document.body.onload = function () {
 
