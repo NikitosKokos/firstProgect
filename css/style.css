@@ -201,7 +201,6 @@ h6 {
 }
 
 @keyframes ball {
-
   20%,
   80% {
     opacity: 1;
@@ -288,8 +287,6 @@ h6 {
   background-color: #222;
   z-index: 99;
 }
-
-
 
 .header {
   width: 100%;
@@ -490,6 +487,14 @@ h6 {
   position: absolute;
   transition: opacity 0.1;
 }
+/* background-image  */
+.game__1 .background-image {
+  background-image: url("../img/flappy-bird.jpg");
+}
+
+.game__2 .background-image {
+  background-image: url("../img/snake.jpg");
+}
 
 .close {
   font-size: 50px;
@@ -538,8 +543,6 @@ h6 {
     grid-column-gap: 50px;
   }
 }
-
-
 
 @media (max-width: 767px) {
   .max-width-conteiner {
