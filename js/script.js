@@ -22,4 +22,4 @@ document.body.onload = function () {
 
   }, 1000);
 };
-// preloader end
+// preloader end location.reload()

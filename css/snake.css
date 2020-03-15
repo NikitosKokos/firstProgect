@@ -92,4 +92,104 @@ h6 {
 
 canvas {
 	background: yellow;
+	box-shadow: 20px 10px 10px #ffa500, 10px 5px 10px #ffa500,
+		5px 0px 10px #ffa500, 0px 0 20px #ffa500;
+}
+
+/* game */
+.body-snake {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #87ceeb;
+}
+
+/* game end */
+
+.card {
+	width: 550px;
+	height: 550px;
+	position: relative;
+	perspective: 1000px;
+}
+
+.front,
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: 1s;
+	backface-visibility: hidden;
+	border-radius: 10px;
+}
+
+.front {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.back {
+	background-color: yellow;
+	transform: rotateY(180deg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.card:hover .front {
+	transform: rotateY(180deg);
+}
+
+.card:hover .back {
+	transform: rotateY(360deg);
+}
+
+.scoreSnake {
+	font-size: 20px;
+	font-family: Consolas;
+
+}
+
+.gameMenu a {
+	font-size: 100px;
+}
+
+.gameMenu {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+a .fa-caret-left {
+	color: #ff6347;
+}
+
+a .fa-caret-right {
+	color: #00ff00;
+
+}
+
+a .fa-redo {
+	color: white;
+
+}
+
+.margin {
+	margin: 0 50px;
+}
+
+
+
+.chest-img {
+	position: absolute;
+	top: 0;
+	display: block;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

@@ -6,16 +6,32 @@
     <meta name="viewport" content="width=device-width">
     <title>Flappy Brid</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/preloader.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/png" />
     <link rel="stylesheet" href="../fonts/css/fontawesome.min.css" />
     <script src="https://use.fontawesome.com/edf57295b2.js"></script>
 </head>
 
-<body>
-
+<body class="flappyBody">
+    <!--preloader -->
+    <div id="page-preloader" class="preloader">
+        <div class="loader">
+            <div class="pacmen">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!--preloader end-->
 
     <canvas id="canvas" width="288" height="512"></canvas>
     <script src="../js/flappyBrid.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script>-->
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

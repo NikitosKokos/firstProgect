@@ -6,19 +6,50 @@
     Змейка
   </title>
   <!-- <meta http-equiv="Content-type" content="text/html;charset-UTF-8" /> -->
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../css/snake.css" />
+  <link rel="stylesheet" href="../css/preloader.css" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
+  <link rel="stylesheet" href="../fonts/css/fontawesome.min.css" />
+  <script src="https://use.fontawesome.com/edf57295b2.js"></script>
 
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
 </head>
 
-<body class="body">
-  <canvas id="canvas" width="500px" height="500px"></canvas>
-
+<body class="body-snake">
+  <!--preloader -->
+  <div id="page-preloader" class="preloader">
+    <div class="loader">
+      <div class="pacmen">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <!--preloader end-->
+  <div class="card">
+    <div class="front"><canvas id="canvas" width="500px" height="500px"></canvas></div>
+    <div class="back">
+      <div>
+        <img class="chest-img" src="../img/chest.png" alt="chest" width="275px">
+        <div class="scoreSnake">Score 0</div>
+        <div class="gameMenu">
+          <a href="#"><i class="fa fa-caret-left "></i></a>
+          <span class="margin"><a href="#"><i class="fa fa-redo "></i></a></span>
+          <a href="#"><i class="fa fa-caret-right "></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+  </script>
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script> -->
   <script src="../js/snake.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
