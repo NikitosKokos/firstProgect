@@ -244,3 +244,4 @@ function bRight() {
 function bDown() {
   snake.setDirection("down");
 }
+// buttons end
