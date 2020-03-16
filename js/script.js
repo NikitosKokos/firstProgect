@@ -20,6 +20,6 @@ document.body.onload = function () {
       preloader.classList.add('done')
     }
 
-  }, 1000);
+  }, 500);
 };
 // preloader end location.reload()

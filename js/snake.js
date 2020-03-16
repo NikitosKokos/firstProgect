@@ -34,6 +34,15 @@ let gameOver = function () {
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.fillText("Конец игры", width / 2, height / 2);
+  setTimeout(function () {
+    // конец игры 
+    let backActive = document.querySelector('#back');
+    backActive.classList.add('back_active');
+    let frontActive = document.querySelector('#front');
+    frontActive.classList.add('front_active');
+    // location.reload();
+  }, 1000);
+
 };
 // Рисуем окружность (используя функцию из главы 14)
 let circle = function (x, y, radius, fillCircle) {
@@ -161,6 +170,7 @@ Snake.prototype.setDirection = function (newDirection) {
   } else if (this.direction === "left" && newDirection === "right") {
     return;
   }
+
   this.nextDirection = newDirection;
 };
 // Задаем конструктор Apple (яблоко)
@@ -202,4 +212,35 @@ $("body").keydown(function (event) {
   if (newDirection !== undefined) {
     snake.setDirection(newDirection);
   }
+
+
 });
+
+
+// menu
+$('.fa-redo').on('click', function (e) {
+  e.preventDefault();
+  setTimeout(function () {
+
+    location.reload();
+  }, 500);
+})
+
+
+
+// buttons
+function bTop() {
+  snake.setDirection("up");
+}
+
+function bLeft() {
+  snake.setDirection("left");
+}
+
+function bRight() {
+  snake.setDirection("right");
+}
+
+function bDown() {
+  snake.setDirection("down");
+}
