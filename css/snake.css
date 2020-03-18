@@ -1,81 +1,81 @@
 /*Обнуление*/
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *,
 *:before,
 *:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
 :active {
-	outline: none;
+  outline: none;
 }
 
 a:focus,
 a:active {
-	outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-	display: block;
+  display: block;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 h1,
@@ -84,167 +84,170 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	/*font-weight: 400;*/
+  font-size: inherit;
+  /*font-weight: 400;*/
 }
 
 /*--------------------*/
 
 canvas {
-	background: yellow;
-	box-shadow: 20px 10px 10px #ffa500, 10px 5px 10px #ffa500,
-		5px 0px 10px #ffa500, 0px 0 20px #ffa500;
+  background: yellow;
+  box-shadow: 20px 10px 10px #ffa500, 10px 5px 10px #ffa500,
+    5px 0px 10px #ffa500, 0px 0 20px #ffa500;
 }
 
 /* game */
 .wrapper {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #87ceeb;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #87ceeb;
 }
 
 /* game end */
 /* card */
 .card {
-	width: 550px;
-	height: 550px;
-	position: relative;
-	perspective: 1000px;
+  width: 550px;
+  height: 550px;
+  position: relative;
+  perspective: 1000px;
 }
 
 .front,
 .back {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	transition: 1s;
-	backface-visibility: hidden;
-	border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 .front {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .back {
-	background-color: yellow;
-	transform: rotateY(180deg);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  background-color: yellow;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .card .front_active {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .card .back_active {
-	transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .scoreSnake {
-	font-size: 20px;
-	font-family: Consolas;
-
+  font-size: 20px;
+  font-family: Consolas;
 }
 
 /* menu */
 .gameMenu a {
-	font-size: 100px;
+  font-size: 100px;
 }
 
 .gameMenu {
-	position: absolute;
-	bottom: 50px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 a .fa-caret-left {
-	color: #ff6347;
+  color: #ff6347;
 }
 
 a .fa-caret-right {
-	color: #00ff00;
-
+  color: #00ff00;
 }
 
 a .fa-redo {
-	color: white;
-
+  color: white;
 }
 
 .margin {
-	margin: 0 50px;
+  margin: 0 50px;
 }
 
-
-
 .chest-img {
-	position: absolute;
-	top: 0;
-	display: block;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*  */
 a {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .buttons a {
-	font-size: 20px;
+  font-size: 20px;
 }
-
 
 /* buttons */
 .buttons {
-
-	bottom: 0;
-	position: absolute;
-	display: none;
-
+  bottom: 0;
+  position: fixed;
+  display: none;
 }
 
 .buttons__grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-row-gap: 2px;
-	grid-column-gap: 2px;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
 }
-
 .buttons__grid a {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: 1em 1.5em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  background: #454545;
+}
+.buttons__grid a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+/* .buttons__grid a {
 	background: grey;
 	width: 50px;
 	height: 50px;
 	text-align: center;
 
 	border: 1px solid #000;
-}
+} */
 
 @media (max-width: 992px) {
-	.buttons {
-		display: block;
-	}
+  .buttons {
+    display: block;
+  }
 
-	.front {
-		padding: 0 10px;
-	}
+  .front {
+    padding: 0 10px;
+  }
 
-	.gameMenu a {
-		font-size: 90px;
-	}
+  .gameMenu a {
+    font-size: 90px;
+  }
 }
