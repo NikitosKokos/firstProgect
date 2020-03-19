@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Змейка
-    </title>
-    <!-- <meta http-equiv="Content-type" content="text/html;charset-UTF-8" /> -->
-    <meta name="viewport" content="width=500-width" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../css/snake.css" />
-    <link rel="stylesheet" href="../css/preloader.css" />
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
-    <link rel="stylesheet" href="../fonts/css/fontawesome.min.css" />
-    <script src="https://use.fontawesome.com/edf57295b2.js"></script>
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <!--preloader -->
-      <div id="page-preloader" class="preloader">
-        <div class="loader">
-          <div class="pacmen">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <!--preloader end-->
-      <div class="card">
-        <div class="front" id="front">
-          <canvas id="canvas" width="500px" height="500px"></canvas>
-        </div>
-        <div class="back" id="back">
-          <div>
-            <img
-              class="chest-img"
-              src="../img/chest.png"
-              alt="chest"
-              width="275px"
-            />
-            <div class="scoreSnake">Score</div>
-            <div class="gameMenu">
-              <!-- menu -->
-              <a href="../index.html"><i class="fa fa-caret-left "></i></a>
-              <span class="margin"
-                ><a href="#"><i class="fa fa-redo "></i></a
-              ></span>
-              <a href="#"><i class="fa fa-caret-right "></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+<head>
+  <title>
+    Змейка
+  </title>
+  <!-- <meta http-equiv="Content-type" content="text/html;charset-UTF-8" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/snake.css" />
+  <link rel="stylesheet" href="../css/preloader.css" />
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/png" />
+  <link rel="stylesheet" href="../fonts/css/fontawesome.min.css" />
+  <script src="https://use.fontawesome.com/edf57295b2.js"></script>
+</head>
 
-      <div class="buttons">
-        <div class="buttons__grid">
-          <span></span>
-          <a href="#" class="b_top" onclick="bTop()"
-            ><i class="fa fa-arrow-alt-up"></i>t</a
-          >
-          <span></span>
-          <a href="#" class="b_left" onclick="bLeft()"
-            ><i class="fa fa-arrow-alt-left"></i>l</a
-          >
-          <a href="#" class="b_down" onclick="bDown()"
-            ><i class="fa fa-arrow-alt-down"></i>d</a
-          >
-          <a href="#" class="b_right" onclick="bRight()"
-            ><i class="fa fa-arrow-alt-right"></i>r</a
-          >
+<body>
+  <div class="wrapper">
+    <!--preloader -->
+    <div id="page-preloader" class="preloader">
+      <div class="loader">
+        <div class="pacmen">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script> -->
-    <script src="../js/snake.js"></script>
-    <script src="../js/script.js"></script>
-  </body>
+    <!--preloader end-->
+    <div class="card">
+      <div class="front" id="front">
+        <canvas id="canvas" width="500px" height="500px"></canvas>
+      </div>
+      <div class="back" id="back">
+        <div>
+          <img class="chest-img" src="../img/chest.png" alt="chest" width="275px" />
+          <div class="scoreSnake">Score</div>
+          <div class="gameMenu">
+            <!-- menu -->
+            <a href="../index.html"><i class="fa fa-caret-left "></i></a>
+            <span class="margin"><a href="#"><i class="fa fa-redo "></i></a></span>
+            <a href="#"><i class="fa fa-caret-right "></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="buttons__grid">
+        <span></span>
+        <a href="#" class="b_top" onclick="bTop()"><i class="fa fa-arrow-alt-up"></i>t</a>
+        <span></span>
+        <a href="#" class="b_left" onclick="bLeft()"><i class="fa fa-arrow-alt-left"></i>l</a>
+        <a href="#" class="b_down" onclick="bDown()"><i class="fa fa-arrow-alt-down"></i>d</a>
+        <a href="#" class="b_right" onclick="bRight()"><i class="fa fa-arrow-alt-right"></i>r</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.slin.min.js"></script> -->
+  <script src="../js/snake.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+
 </html>
